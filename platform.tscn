@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://0a1ew71huacv"]
+
+[ext_resource type="Texture2D" uid="uid://kfd416e8pc5y" path="res://Tiles/grass_32x32.png" id="1_mi635"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
+size = Vector2(31, 32)
+
+[node name="Platform" type="StaticBody2D" unique_id=630216063]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=923510894]
+position = Vector2(5.5, 6)
+shape = SubResource("RectangleShape2D_s8bxr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1729586575]
+position = Vector2(6, 6)
+texture = ExtResource("1_mi635")

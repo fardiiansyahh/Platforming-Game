@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bu7jkxdmhrgs1"]
 
 [ext_resource type="PackedScene" uid="uid://cfojgjlp51aui" path="res://player.tscn" id="1_glv2v"]
-[ext_resource type="Texture2D" uid="uid://caqw0jrru3q1d" path="res://icon.svg" id="1_uu6xs"]
+[ext_resource type="Texture2D" uid="uid://ytkq3my1vxxa" path="res://Tiles/dirt_96x96.png" id="1_r0du0"]
+[ext_resource type="PackedScene" uid="uid://0a1ew71huacv" path="res://platform.tscn" id="3_r0du0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxg2q"]
 size = Vector2(1159, 150)
@@ -16,9 +17,21 @@ position = Vector2(18, -10)
 shape = SubResource("RectangleShape2D_rxg2q")
 
 [node name="Sprite2D" type="Sprite2D" parent="Floor" unique_id=2052277135]
-position = Vector2(21.5, -8)
-scale = Vector2(9.1171875, 1)
-texture = ExtResource("1_uu6xs")
+position = Vector2(23.351578, -7.7500114)
+scale = Vector2(12.132324, 1.6406249)
+texture = ExtResource("1_r0du0")
 
 [node name="Player" parent="." unique_id=1619945114 instance=ExtResource("1_glv2v")]
 position = Vector2(19, 272)
+
+[node name="Platform" parent="." unique_id=630216063 instance=ExtResource("3_r0du0")]
+position = Vector2(481, 352)
+
+[node name="Platform2" parent="." unique_id=102746001 instance=ExtResource("3_r0du0")]
+position = Vector2(660, 262)
+
+[node name="Platform3" parent="." unique_id=2145567270 instance=ExtResource("3_r0du0")]
+position = Vector2(407, 410)
+
+[node name="Platform4" parent="." unique_id=395875915 instance=ExtResource("3_r0du0")]
+position = Vector2(546, 261)
