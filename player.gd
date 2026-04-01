@@ -7,8 +7,23 @@ const DOWN_THRUST = 6000
 const MAX_Jump = 2
 
 var jump_count = 0
+var spawn_position = Vector2.ZERO
+
+func ready():
+	spawn_position = global_position
+	
+	
+func respawn():
+	global_position = spawn_position
+	velocity = Vector2.ZERO
+	
+
 
 func _physics_process(delta):
+	
+	if global_position.y > 1000:
+		respawn()	
+	
 	if is_on_floor() and velocity.y >= 0:
 		jump_count = 0
 	# Apply gravity
