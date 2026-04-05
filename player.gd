@@ -16,7 +16,7 @@ func ready():
 func respawn():
 	global_position = spawn_position
 	velocity = Vector2.ZERO
-	
+	$Death_sound.play()
 
 
 func _physics_process(delta):

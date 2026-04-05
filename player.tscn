@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://1ks3wsp4ja0s" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="AudioStream" uid="uid://btnblloimjb0o" path="res://qubodup-cfork-ccby3-jump.ogg" id="3_i3pqv"]
 [ext_resource type="AudioStream" uid="uid://ctojanrno3khq" path="res://land.wav" id="4_hqtel"]
+[ext_resource type="AudioStream" uid="uid://ccnfa27h1t87v" path="res://vgdeathsound.wav" id="5_sweqy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
 size = Vector2(58, 56)
@@ -29,3 +30,6 @@ stream = ExtResource("3_i3pqv")
 
 [node name="Land_sound" type="AudioStreamPlayer2D" parent="." unique_id=541348607]
 stream = ExtResource("4_hqtel")
+
+[node name="Death_sound" type="AudioStreamPlayer2D" parent="." unique_id=921377687]
+stream = ExtResource("5_sweqy")
