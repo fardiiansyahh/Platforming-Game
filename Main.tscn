@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ytkq3my1vxxa" path="res://Tiles/dirt_96x96.png" id="1_r0du0"]
 [ext_resource type="PackedScene" uid="uid://0a1ew71huacv" path="res://platform.tscn" id="3_r0du0"]
 [ext_resource type="PackedScene" uid="uid://bfxyys0p4g6x7" path="res://spike.tscn" id="4_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://kfdgcp4ket1v" path="res://Enemy.tscn" id="5_fos0i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxg2q"]
 size = Vector2(1159, 150)
@@ -42,3 +43,9 @@ position = Vector2(320, 480)
 
 [node name="Spike2" parent="." unique_id=1903573728 instance=ExtResource("4_cm0pq")]
 position = Vector2(426, 389)
+
+[node name="Enemy" parent="." unique_id=1273847108 instance=ExtResource("5_fos0i")]
+position = Vector2(811, 383)
+
+[node name="Enemy2" parent="." unique_id=1614146880 instance=ExtResource("5_fos0i")]
+position = Vector2(875, 384)

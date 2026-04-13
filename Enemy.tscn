@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://kfdgcp4ket1v"]
+
+[ext_resource type="Script" uid="uid://bt1sxrhku7ql1" path="res://enemy.gd" id="1_tt7e2"]
+[ext_resource type="Texture2D" uid="uid://4hq4v0at1nk2" path="res://Tiles/Textures/OrangeSlimeSimp.png" id="2_s7bn3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hac7"]
+size = Vector2(20, 11)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1273847108]
+script = ExtResource("1_tt7e2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1409639718]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_2hac7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=248230739]
+texture = ExtResource("2_s7bn3")
+region_enabled = true
+region_rect = Rect2(15.108871, 0, 16.547005, 16)

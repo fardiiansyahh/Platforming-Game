@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dgt3nbyfhtgru" path="res://Tiles/spr_spike.png" id="1_8ryga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7k7bx"]
-size = Vector2(8, 20.5)
+size = Vector2(20, 61)
 
-[node name="Spike" type="Area2D" unique_id=1755855767]
+[node name="Spike" type="StaticBody2D" unique_id=737218931]
 script = ExtResource("1_7k7bx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1580911740]
@@ -16,7 +16,9 @@ region_enabled = true
 region_rect = Rect2(51.382362, 3.0293465, 9.712372, 22.302483)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1469962720]
-position = Vector2(-7, -21)
+position = Vector2(-1, 3.5)
 shape = SubResource("RectangleShape2D_7k7bx")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="Area2D" type="Area2D" parent="." unique_id=187278781]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1344538085]
